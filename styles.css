@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  height: 700px;
+  width: 100vw;
+  background-image: url("images/sectionOneImage.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nikeFrame {
+  height: 186px;
+  width: 391px;
+  position: absolute;
+  background-image: url("images/NikeFrame.jpg");
+  top: 475px;
+  left: 75px;
+  border-radius: 10px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sectionOnePartOne {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 3rem;
+  width: 40%;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.justDoIt {
+  font-size: 54px;
+  font-weight: 700;
+  color: rgba(89, 69, 139, 1);
+  margin-bottom: 0;
+}
+
+.sectionOnePara {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  margin: 0.5rem 0;
+}
+
+.readMore {
+  display: inline-flex;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+}
+
+.visitButton {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: rgba(89, 69, 139, 1);
+  height: 52px;
+  width: 231px;
+  justify-content: space-around;
+  color: white;
+  border-radius: 10px;
+  border-color: rgba(89, 69, 139, 1);
+}
+
+.sectionOnePartTwo {
+  width: 35%;
+  position: relative;
+  background: linear-gradient(90deg, rgba(234, 113, 28, 1) 13%, rgba(238, 147, 82, 1) 82%, rgba(240, 166, 113, 1) 100%, rgba(242, 181, 138, 1) 100%, rgba(243, 187, 148, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 516px;
+  border-radius: 8px;
+  right: 3rem;
+  top: 4rem
+}
+
+.sectionOnePartTwoItems {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  width: 80%;
+  padding: 0 2rem;
+  gap: 1rem
+}
+
+.line {
+  align-self: center;
+  width: 90%;
+  border: 1px solid rgb(255, 255, 255, 0.2)
+}
+
+
+.carouselOneImage {
+  height: 500px;
+}
+
+.carouselCardText {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(89, 69, 139, 1), rgba(89, 69, 139, 0.4));
+  margin-bottom: 0;
+  height: 2.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 15px;
+  text-align: center;
+  bottom: 0;
+
+  left: 2rem;
+
+  >p {
+    margin: 0.7rem;
+  }
+}
+
+.carouselContainer {
+  width: 100vw
+}
+
+.carouselSlider {
+  margin-top: 4rem;
+}
+
+
+
+
+
+
+/* Carousel slider */
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+
+  >.container {
+    width: 1400px
+      /*  */
+  }
+}
+
+.slider .owl-item.active.center .slider-card {
+
+  transform: scale(1.15);
+  opacity: 1;
+  /* background: #ff9966; */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to bottom, #ff5e62, #ff9966); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+.slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 50px 15px 90px 15px;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.slider-card img {
+  border-radius: 10px;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background-color: #fff !important;
+  left: 2.5rem;
+  height: 2rem;
+  width: 2.5rem;
+  border-radius: 5px;
+
+  >i::before {
+    content: '';
+  }
+
+  >.fa-angle-left {
+    height: 2rem;
+    content: "";
+    display: block;
+    background: url('images/arrows/arrow_left.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background-color: #fff !important;
+  right: 2.5rem;
+  height: 2rem;
+  width: 2.5rem;
+  border-radius: 5px;
+
+  >i::before {
+    content: '';
+  }
+
+  >.fa-angle-right {
+    height: 2rem;
+    content: "";
+    display: block;
+    background: url('images/arrows/arrow_right.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.owl-dots {
+  display: none;
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #ccc !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+
+.owl-dots .owl-dot.active {
+  background: #f44336 !important;
+}
+
+/* Map */
+.addressCard {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 395px;
+  width: 366px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  left: 5rem;
+  margin-top: 3rem;
+  gap: 0.5rem
+}
+
+.store {
+  font-size: 38px;
+  font-weight: 700;
+  color: rgba(89, 69, 139, 1);
+}
+
+.storeImageAndTitleContainer {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.store-Nike {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.storeDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section3icons {
+  height: 24px;
+  width: 24px
+}
+
+.viewStoreButton {
+  border: 1px solid;
+  width: 50%;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  height: 3rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+
+/* similar card carousel  */
+.section4 {
+  margin-top: 3rem;
+}
+
+.similarBrandTitleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.similarTitle {
+  position: relative;
+  left: 3rem;
+}
+
+.similarBrandCardText {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.brandNameAndImageContainer {
+  display: flex;
+  margin-top: 2rem;
+  color: #000
+}
+
+.brandLogoContainer {
+  width: 100%;
+}
+
+.brandLogoContainer {
+
+  >.brandLogo {
+    height: 110px;
+    width: 110px !important;
+    margin: auto;
+    margin-top: 10%;
+  }
+}
+
+.brandName {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 90%;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: larger;
+  font-weight: 700;
+
+  >.similarBrandArrow {
+    border-radius: 2px;
+    height: 24px;
+    width: 24px !important;
+    background-color: #f44336;
+    padding: 5px;
+    position: absolute;
+    right: 2rem;
+  }
+}
+
+.verticalLine {
+  font-size: x-large;
+}
+
+.viewAll {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  right: 3rem;
+}
+
+.viewAllArrow {
+  rotate: 180deg;
+  width: 1rem;
+  height: 1rem;
+}
+
+.carouselSlider2 {
+  padding-top: 0 !important;
+}
+
+.verticalLine {
+  font-weight: 700;
+  color: rgba(234, 113, 0, 1);
+}
+
+/* Carousel slider 2*/
+.slider2 {
+  margin-bottom: 30px;
+  position: relative;
+
+  >.container {
+    width: 1400px
+      /*  */
+  }
+}
+
+.slider2 .owl-item.active.center .slider-card2 {
+
+  transform: scale(0.9);
+  opacity: 1;
+  /* background: #ff9966; */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to bottom, #ff5e62, #ff9966); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+.slider-card2 {
+  background: #fff;
+  padding: 0x;
+  margin: 50px 15px 90px 15px;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 1;
+  transition: all 0.3s;
+  height: 280px;
+  width: 408px;
+
+}
+
+.slider-card2 img {
+  border-radius: 10px;
+  height: 280px;
+  width: 408px !important;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background-color: #fff !important;
+  left: 2.5rem;
+  height: 2rem;
+  width: 2.5rem;
+
+  >i::before {
+    content: '';
+  }
+
+  >.fa-angle-left {
+    height: 2rem;
+    display: flow-root;
+    background: url('images/arrows/arrow_left.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+  background-color: #fff !important;
+  right: 2.5rem;
+  height: 2rem;
+  width: 2.5rem;
+
+  >i::before {
+    content: '';
+  }
+
+  >.fa-angle-right {
+    height: 2rem;
+    display: flow-root;
+    background: url('images/arrows/arrow_right.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.owl-dots {
+  display: none;
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #ccc !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+
+.owl-dots .owl-dot.active {
+  background: #f44336 !important;
+}
+
+.owlCarousel2 {
+  >.owl-stage-outer {
+    >.owl-stage {
+      width: 13000px !important;
+
+      >.owl-item {
+        width: 390px !important
+      }
+    }
+  }
+}
+
+.owlCarousel1 {
+  >.owl-stage-outer {
+    >.owl-stage {
+
+      width: 8360px !important;
+
+
+      >.owl-item {
+        margin-left: -0.9rem;
+        /* margin-right: 0.5rem; */
+        /* width: 530px !important */
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .sectionOnePartOne {
+    width: 50%;
+  }
+
+  .justDoIt {
+    font-size: 45px;
+  }
+
+  .sectionOnePara {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .sectionOnePartTwo {
+    width: 38%;
+    height: 410px;
+  }
+
+  .sectionOnePartTwoItems {
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .carouselCardText {
+    font-size: 10px;
+    left: 1rem;
+    height: 2rem;
+
+  }
+
+  .carouselOneImage {
+    height: 400px;
+  }
+}
